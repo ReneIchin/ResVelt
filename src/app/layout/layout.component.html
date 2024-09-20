@@ -1,0 +1,52 @@
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg bg-body-tertiary" data-bs-theme="light">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">RestVelt</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item">
+          <a class="nav-link" [routerLink]="['/reservas']" [routerLinkActive]="['active', 'active-color']">Reservas</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" [routerLink]="['/informe']" [routerLinkActive]="['active', 'active-color']">Informe</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" [routerLink]="['/panel']" [routerLinkActive]="['active', 'active-color']">Panel</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Página web</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Soporte</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Cuenta
+          </a>
+          <ul class="dropdown-menu dropdown-menu-end">
+            <li><a class="dropdown-item" href="#">Mis Datos</a></li>
+            <li><a class="dropdown-item" href="#">Configuraciones</a></li>
+            <li><a class="dropdown-item" href="#">Cerrar Sesión</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- Main content container, ocupa todo el espacio entre el navbar y el footer -->
+<div class="main-content">
+  <router-outlet></router-outlet>
+</div>
+
+<!-- Footer siempre abajo -->
+<footer class="bg-clouds">
+  <div class="container">
+    <p>&copy; 2024 RestVelt. Todos los derechos reservados.</p>
+  </div>
+</footer>
+

@@ -1,1 +1,75 @@
 /* You can add global styles to this file, and also import other style files */
+
+/* Asegúrate de que el html y body ocupen el 100% de la altura de la página */
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background: #44A08D;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #093637, #44A08D);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #093637, #44A08D); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+/* El navbar está fijo en la parte superior y no colapsa */
+nav {
+  flex-shrink: 0;
+}
+
+/* El contenedor donde estará el contenido del router-outlet debe ocupar el espacio restante */
+.main-content {
+  flex: 1; /* Esto hace que ocupe el espacio restante */
+  padding: 20px;
+}
+
+/* El footer debe estar siempre al final */
+footer {
+  flex-shrink: 0;
+  background-color: #343a40;
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+  width: 100%;
+}
+
+
+
+
+.container-center{
+  display: flex;
+   justify-content: center;
+   align-items: center;
+ }
+
+ .bg-primary{
+   background: #134E5E;  /* fallback for old browsers */
+ background: -webkit-linear-gradient(to bottom, #71B280, #134E5E);  /* Chrome 10-25, Safari 5.1-6 */
+ background: linear-gradient(to bottom, #71B280, #134E5E); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+ }
+
+ .bg-clouds{
+   background: #ECE9E6 !important;  /* fallback for old browsers */
+ background: -webkit-linear-gradient(to bottom, #FFFFFF, #ECE9E6) !important;  /* Chrome 10-25, Safari 5.1-6 */
+ background: linear-gradient(to bottom, #FFFFFF, #ECE9E6) !important; /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+ color:black !important;
+ }
+
+ .bg-muted
+ {
+   background-color: darkgray !important;
+ }
+
+.active-color
+{
+  background-color: #44A08D !important;
+  border-radius: 10px !important;
+  color: white !important;
+  height: auto;
+}
+
+

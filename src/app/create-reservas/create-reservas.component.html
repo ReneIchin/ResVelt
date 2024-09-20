@@ -1,0 +1,173 @@
+<div class="container mt-5">
+  <div class="row">
+    <div class="col-12">
+      <div class="card">
+        <div class="card-body">
+          <form>
+            <div class="row">
+
+              <!-- Opciones de radio -->
+              <div class="form-group col-md-12 mb-3">
+                <div class="d-flex flex-wrap gap-2">
+                  <input type="radio" class="btn-check" name="options" id="option1" autocomplete="off" checked>
+                  <label class="btn btn-success flex-fill" for="option1">Cuádruple 350</label>
+
+                  <input type="radio" class="btn-check" name="options" id="option2" autocomplete="off">
+                  <label class="btn btn-success flex-fill" for="option2">Single 250</label>
+
+                  <input type="radio" class="btn-check" name="options" id="option3" autocomplete="off">
+                  <label class="btn btn-success flex-fill" for="option3">Double 270</label>
+
+                  <input type="radio" class="btn-check" name="options" id="option4" autocomplete="off">
+                  <label class="btn btn-success flex-fill" for="option4">Triple 280</label>
+
+                  <input type="radio" class="btn-check" name="options" id="option5" autocomplete="off">
+                  <label class="btn btn-success flex-fill" for="option5">VIP 380</label>
+                </div>
+              </div>
+
+              <!-- Check-in -->
+              <div class="col-lg-6 col-md-6 col-sm-12 mb-3">
+                <label for="calendarCheckin" class="form-label">Check-in</label>
+                <div class="input-group">
+                  <span class="input-group-text"><i class="fa fa-calendar"></i></span>
+                  <input type="date" class="form-control" id="calendarCheckin">
+                </div>
+              </div>
+
+              <!-- Tipo de reserva -->
+              <div class="col-lg-6 col-md-6 col-sm-12 mb-3">
+                <label for="tipoReserva" class="form-label">Tipo de Reserva</label>
+                <div class="input-group">
+                  <span class="input-group-text"><i class="fa fa-list"></i></span>
+                  <select class="form-control" id="tipoReserva">
+                    <option value="">Seleccione tipo</option>
+                  </select>
+                </div>
+              </div>
+
+              <!-- Check-out -->
+              <div class="col-lg-6 col-md-6 col-sm-12 mb-3">
+                <label for="calendarCheckout" class="form-label">Check-out</label>
+                <div class="input-group">
+                  <span class="input-group-text"><i class="fa fa-calendar"></i></span>
+                  <input type="date" class="form-control" id="calendarCheckout">
+                </div>
+              </div>
+
+              <!-- Habitación -->
+              <div class="col-lg-6 col-md-6 col-sm-12 mb-3">
+                <label for="habitacion" class="form-label">Habitación</label>
+                <div class="input-group">
+                  <span class="input-group-text"><i class="fa fa-door-open"></i></span>
+                  <select class="form-control" id="habitacion">
+                    <option value="">Seleccione habitación</option>
+                  </select>
+                </div>
+              </div>
+
+              <!-- Número de Adultos -->
+              <div class="col-lg-3 col-md-4 col-sm-6 mb-3">
+                <label for="numberAdulto" class="form-label">Adulto</label>
+                <div class="input-group">
+                  <span class="input-group-text"><i class="fa fa-plus"></i></span>
+                  <input type="number" class="form-control" id="numberAdulto" value="1">
+                </div>
+              </div>
+
+              <!-- Número de Niños -->
+              <div class="col-lg-3 col-md-4 col-sm-6 mb-3">
+                <label for="numberNino" class="form-label">Niño</label>
+                <div class="input-group">
+                  <span class="input-group-text"><i class="fa fa-plus"></i></span>
+                  <input type="number" class="form-control" id="numberNino" value="0">
+                </div>
+              </div>
+
+              <div class="form-group col-md-12 mb-3">
+                <div class="d-flex flex-wrap gap-2">
+                  <input type="radio" class="btn-check" name="precios" id="precio1" autocomplete="off" checked>
+                  <label class="btn btn-success" for="precio1">$600</label>
+
+                  <input type="radio" class="btn-check" name="precios" id="precio2" autocomplete="off">
+                  <label class="btn btn-success" for="precio2">$700</label>
+
+                  <input type="radio" class="btn-check" name="precios" id="precio3" autocomplete="off">
+                  <label class="btn btn-success" for="precio3">$800</label>
+
+                  <input type="radio" class="btn-check" name="precios" id="precio4" autocomplete="off">
+                  <label class="btn btn-success" for="precio4">$280</label>
+
+                  <input type="radio" class="btn-check" name="precios" id="precio5" autocomplete="off">
+                  <label class="btn btn-success" for="precio5">$2,380</label>
+                </div>
+              </div>
+              <!-- Nombre -->
+              <div class="col-lg-6 col-md-6 col-sm-12 mb-3">
+                <label for="nombre" class="form-label">Nombre</label>
+                <input type="text" class="form-control" id="nombre" placeholder="Ingresa el nombre">
+              </div>
+
+              <!-- Apellidos -->
+              <div class="col-lg-6 col-md-6 col-sm-12 mb-3">
+                <label for="apellidos" class="form-label">Apellidos</label>
+                <input type="text" class="form-control" id="apellidos" placeholder="Ingresa los apellidos">
+              </div>
+
+              <!-- Teléfono -->
+              <div class="col-lg-6 col-md-6 col-sm-12 mb-3">
+                <label for="telefono" class="form-label">Teléfono</label>
+                <input type="tel" class="form-control" id="telefono" placeholder="Ingresa el teléfono">
+              </div>
+
+              <!-- Email -->
+              <div class="col-lg-6 col-md-6 col-sm-12 mb-3">
+                <label for="email" class="form-label">Email</label>
+                <input type="email" class="form-control" id="email" placeholder="Ingresa el email">
+              </div>
+
+              <!-- Ciudad -->
+              <div class="col-lg-6 col-md-6 col-sm-12 mb-3">
+                <label for="ciudad" class="form-label">Ciudad</label>
+                <input type="text" class="form-control" id="ciudad" placeholder="Ingresa la ciudad">
+              </div>
+
+              <!-- Región -->
+              <div class="col-lg-6 col-md-6 col-sm-12 mb-3">
+                <label for="region" class="form-label">Región</label>
+                <input type="text" class="form-control" id="region" placeholder="Ingresa la región">
+              </div>
+
+              <!-- Dirección -->
+              <div class="col-lg-6 col-md-6 col-sm-12 mb-3">
+                <label for="direccion" class="form-label">Dirección</label>
+                <input type="text" class="form-control" id="direccion" placeholder="Ingresa la dirección">
+              </div>
+
+              <!-- Número de Reserva -->
+              <div class="col-lg-6 col-md-6 col-sm-12 mb-3">
+                <label for="numeroReserva" class="form-label">Número de Reserva</label>
+                <input type="text" class="form-control" id="numeroReserva">
+              </div>
+
+              <!-- Descripción -->
+              <div class="col-12 mb-3">
+                <label for="descripcion" class="form-label">Descripción</label>
+                <textarea class="form-control" id="descripcion" rows="3"></textarea>
+              </div>
+
+              <!-- Botones -->
+              <div class="col-12 text-end">
+                <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+                  <button type="button" class="btn btn-secondary me-md-2" (click)="closeModal()" data-bs-dismiss="modal">Cerrar</button>
+                  <button type="submit" class="btn btn-primary">Guardar <i class="fa fa-save"></i></button>
+                </div>
+              </div>
+
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

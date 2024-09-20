@@ -19,6 +19,7 @@
     "importHelpers": true,
     "target": "ES2022",
     "module": "ES2022",
+    "resolveJsonModule": true,  // Permite importar archivos JSON
     "lib": [
       "ES2022",
       "dom"
