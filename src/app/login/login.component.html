@@ -64,17 +64,17 @@
                 </div>
               </div>
             </div>
-            <form action="#!">
+            <form action="" [formGroup]="form" (ngSubmit)="onLogin()" >
               <div class="row gy-3 overflow-hidden">
                 <div class="col-12">
                   <div class="form-floating mb-3">
-                    <input type="email" class="form-control" name="email" id="email" placeholder="usuario@ejemplo.com" required>
+                    <input type="email" class="form-control" name="email" id="email" placeholder="usuario@ejemplo.com" formControlName="username" required>
                     <label for="email" class="form-label">Usuario</label>
                   </div>
                 </div>
                 <div class="col-12">
                   <div class="form-floating mb-3">
-                    <input type="password" class="form-control" name="password" id="password" value="" placeholder="contraseña" required>
+                    <input type="password" class="form-control" name="password" id="password" value="" placeholder="contraseña" formControlName="password" required>
                     <label for="password" class="form-label">Contraseña</label>
                   </div>
                 </div>
@@ -88,7 +88,7 @@
                 </div>
                 <div class="col-12">
                   <div class="d-grid">
-                    <button class="btn btn-primary btn-lg" type="submit">Inicia Sesión</button>
+                    <button class="btn btn-primary btn-lg" type="submit" [disabled]="this.form.invalid">Inicia Sesión</button>
                   </div>
                 </div>
               </div>
